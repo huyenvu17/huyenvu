@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HBT CONCEPT PROJECTS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--menu control to filter items-->
+<script>
+$(document).ready(function(){
+    $('.category-item').click(function() {
+      var category = $(this).attr('id');
+
+      if(category == 'all'){
+        $('.cat-item').addClass('hide');
+        setTimeout(function(){
+          $('.cat-item').removeClass('hide');
+        }, 300);
+      }
+      else{         
+        $('.cat-item').addClass('hide');
+        setTimeout(function(){
+          $('.' + category).removeClass('hide'); 
+        }, 300);          
+      }  
+    });
+});
+</script>
+</head>
+<body>
+<!--contact hotline-->
+<div class="hotline-wrap">
+<div class="container">
+<div class="hotline">
+  <div>
+        <span class="glyphicon glyphicon-envelope"></span>
+        <span>hbt@gmail.com</span>
+      </div>
+      <div>
+        <span class="glyphicon glyphicon-earphone"></span>
+        <span>0123 456 789</span>
+      </div>
+</div>
+</div>
+</div>
+<!--navigation bar-->
+<nav class="navbar navbar-inverse">
+<div class="container navwrap">
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span> 
+  </button>
+  <a class="navbar-left" href="index.html"><img src="images/logo-hbt.png"/></a>
+</div>
+<div class="collapse navbar-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="index.html">Trang Chủ</a></li>
+    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+    <li><a href="duanthucte.html">Dự Án Thực Tế</a></li> 
+    <li><a href="banggia.html">Bảng Giá</a></li>
+    <li><a href="xuhuongthietke.html">Xu Hướng Thiết Kế</a></li>
+    <li><a href="lienhe.html">Liên Hệ</a></li> 
+  </ul>
+</div>
+</div>
+</nav>
+<!--Project content-->
+<!--Banner Scroll-->
+<div class="parallax1">
+<div class="centered1">
+<p>PORFOLIO</p>
+</div>
+</div>
+<!--Menu Panel-->  
+</div>
+<div class="control-panel">
+	<div class="menu-left category-item" id="all">
+		<h4>Dự Án Thiết Kế</h4>
+	</div>
+	<div class="menu-right">
+			<div class="dropdown">
+			  <p><div class="dropbtn category-item" id="noithatfil">Nội Thất</div></p>
+			  <div class="dropdown-content category-item">
+          <a class="category-item" id="kientrucfil">Category 1</a>
+          <a class="category-item" id="orderfil">Category 2</a>
+          <a class="category-item" id="canhquanfil">Category 3</a>
+          <a class="category-item" id="sanphamnoithatfil">Category 4</a>
+        </div>
+		</div>
+		<div class="dropdown category-item" id="kientrucfil">
+			  <p><div class="dropbtn">Kiến Trúc</div></p>
+			  <div class="dropdown-content category-item" id="kientrucfil">
+			    <a href="#">Category 1</a>
+			    <a href="#">Category 2</a>
+			    <a href="#">Category 3</a>
+			    <a href="#">Category 4</a>
+			  </div>
+		</div>
+		<div class="dropdown category-item" id="canhquanfil">
+			  <p><div class="dropbtn">Cảnh Quan</div></p>
+			  <div class="dropdown-content category-item" id="canhquanfil">
+			    <a href="#">Category 1</a>
+			    <a href="#">Category 2</a>
+			    <a href="#">Category 3</a>
+			    <a href="#">Category 4</a>
+			  </div>
+		</div>
+    <div class="dropdown category-item" id="decorfil">
+        <p><div class="decorfil dropbtn">Decor</div></p>
+        <div class="dropdown-content category-item" id="decorfil">
+          <a href="#" class="category-item" id="cat1">Category 1</a>
+          <a href="#">Category 2</a>
+          <a href="#">Category 3</a>
+          <a href="#">Category 4</a>
+        </div>
+    </div>
+		<div class="dropdown category-item" id="orderfil">
+			  <p><div class="dropbtn">Thiết Kế Theo Yêu Cầu</div></p>
+			  <div class="dropdown-content">
+			    <a href="#">Category 1</a>
+			    <a href="#">Category 2</a>
+			    <a href="#">Category 3</a>
+			    <a href="#">Category 4</a>
+			  </div>
+		</div>
+		<div class="dropdown category-item" id="sanphamnoithatfil">
+			  <p><div class="dropbtn spnt">Sản Phẩm Nội Thất</div></p>
+			  <div class="dropdown-content">
+			    <a href="#">Category 1</a>
+			    <a href="#">Category 2</a>
+			    <a href="#">Category 3</a>
+			    <a href="#">Category 4</a>
+			  </div>
+		</div>
+	</div>
+</div>
+<!--Project showing-->
+<div class="container">
+<div class="project-showing">
+	<div class="col-lg-3 project-show cat-item noithatfil">
+		<div><img src="images/project-img.png"></div>
+		<div class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item noithatfil cat1">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item noithatfil cat1">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item kientrucfil cat1">
+		<div><img src="images/project-img.png"></div>
+		<div class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item orderfil">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item sanphamnoithatfil">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item canhquanfil">
+		<div><img src="images/project-img.png"></div>
+		<div class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item decorfil">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+	<div class="col-lg-3 project-show cat-item kientrucfil">
+		<div><img src="images/project-img.png"></div>
+		<div  class="info-detail">
+			<h4>Thông Tin Sản Phẩm</h4>
+			<button class="btn btn-click1"><a href="">Xem Thêm</a></button>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!--Footer-->
+<div class="orange"></div>
+<div class="footer-base">
+  <div class="container">
+    <div class="footer"> 
+      <div class="text-left">
+        <img src="images/logo-hbt.png">
+        <h4>CÔNG TY TNHH HBT CONCEPT</h4>
+        <p><span class="glyphicon glyphicon-map-marker"></span>  247 Nguyễn Thị Minh Khai, Nguyễn Cư Trinh, Q.1, Tp.HCM</p>  
+        <p><span class="glyphicon glyphicon-record"></span>  Mã số thuế: 0314285451</p>  
+        <p><span class="glyphicon glyphicon-envelope"></span>  hbtconcept@gmail.com</p>
+        <p><span class="glyphicon glyphicon-earphone"></span>  0903.388.497 (Ms. Bình)</p>
+        <p  class="fb">HBT Conept Facebook &nbsp&nbsp<span><a href="#"><img src="images/facebook-icon.png"></a></span></p> 
+      </div>
+      <div class="text-right">
+        <p><a href="index.html">Trang Chủ</a> | <a href="gioithieu.html">Giới Thiệu</a> | <a href="duanthucte.html">Dự Án Thực Tế</a> | </p>
+        <p><a href="banggia.html">Bảng Giá</a> | <a href="xuhuongthietke.html">Xu Hướng Thiết Kế</a> | <a href="lienhe.html">Liên Hệ</a></p>
+        <p>HBT Conept Facebook &nbsp&nbsp<span><a href="#"><img src="images/facebook-icon.png"></a></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

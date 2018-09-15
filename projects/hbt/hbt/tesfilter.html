@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title></title>
+     <script type="text/javascript">
+         function filter() {
+
+
+             var e = document.getElementById("DropDownList1");
+             var a = e.options[e.selectedIndex].text;
+             var e1=document.getElementById("DropDownList2");
+             if (a == 3)
+             {
+                 e1.options[e1.selectedIndex].text = 33;
+             }
+
+         };
+    </script>
+   
+</head>
+   
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:DropDownList ID="DropDownList1" runat="server" >
+            <asp:ListItem>1</asp:ListItem>
+            <asp:ListItem>2</asp:ListItem>
+            <asp:ListItem>3</asp:ListItem>
+        </asp:DropDownList>
+        <asp:DropDownList ID="DropDownList2" runat="server" >
+            <asp:ListItem>11</asp:ListItem>
+            <asp:ListItem>22</asp:ListItem>
+            <asp:ListItem>33</asp:ListItem>
+        </asp:DropDownList>
+    
+    </div>
+
+        <asp:Button ID="filter" runat="server" Text="Button"  OnClientClick="filter()" />
+    </form>
+    <div>
+        <img src="images/test.png" alt="">
+    </div>
+</body>
+</html>
