@@ -1,2 +1,0 @@
-# huyenvu
-My portfolio site
