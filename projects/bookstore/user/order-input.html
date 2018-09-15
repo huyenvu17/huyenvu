@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<link rel="icon" href="images/icon-logo.png" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bookstore - checkout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!--NAVIGATION BAR-->
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+				<form class="navbar-form navbar-left" action="/action_page.php">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<img src="images/search.png" alt="">
+							</button>
+						</div>
+					</div>
+				</form>
+				<div class="collapse navbar-collapse navbar-right shop-cart" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="cart-text">giỏ hàng</li>
+						<li id="cd-cart-trigger" class="cd-img-replace"><img src="images/bag.png" alt=""><span class="badge">2</span></li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+		<!--SHOPPING CART-->
+		<div id="cd-shadow-layer"></div>
+		<div id="cd-cart">
+			<div class="text-center"><img src="images/logo.png" alt=""></div>
+			<h2>Giỏ sách của bạn</h2>
+			<ul class="cd-cart-items">
+				<li>
+					<span class="cd-qty">1x</span> tên sản phẩm
+					<div class="cd-price">100.000 đ</div>
+					<a href="#0" class="cd-item-remove cd-img-replace">Xóa</a>
+				</li>
+
+				<li>
+					<span class="cd-qty">2x</span> tên sản phẩm
+					<div class="cd-price">100.000 đ</div>
+					<a href="#0" class="cd-item-remove cd-img-replace">Xóa</a>
+				</li>
+
+				<li>
+					<span class="cd-qty">1x</span> tên sản phẩm
+					<div class="cd-price">100.000 đ</div>
+					<a href="#" class="cd-item-remove cd-img-replace">Xóa</a>
+				</li>
+			</ul> <!-- cd-cart-items -->
+
+			<div class="cd-cart-total">
+				<p>Tổng tiền <span>300.000 đ</span></p>
+			</div> <!-- cd-cart-total -->
+
+			<a href="#" class="checkout-btn">Thanh toán</a>
+
+			<p class="cd-go-to-cart"><a href="shopping-cart.html">Xem giỏ hàng</a></p>
+		</div> 
+		<!--BREADCRUM-->
+		<div class="page-title-container">
+			<ul class="breadcrumbs">
+				<li><a href="index.html">trang chủ</a></li>
+				<li class="active">giỏ hàng</li>
+			</ul>
+		</div>
+		<!--ORDER INPUT-->
+		<div class="container">
+			<div class="ordinput">
+				<div class="row">
+					<div class="col-md-8 checkoutinput">
+						<div class="memlogin">
+							<div class="col-md-6 txttitle">
+								<h4>Nếu đã đăng ký khách hàng thành viên, chỉ cần nhập số điện thoại !</h4>
+							</div>
+							<div class="col-md-5 input-align">
+								<input type="text" class="filtext" placeholder="nhập số điện thoại" name="memtel">
+								<button class="btn btn-check loginbtn" type="submit">đăng nhập</button>
+							</div>
+						</div>
+						<div class="col-md-12 newlogin">
+								<div class="col-md-12 orderinfo">
+									<p class="textcl">*Dành cho khách hàng mới</p>
+									<h3>VUI LÒNG ĐIỀN THÔNG TIN GIAO HÀNG</h3>	
+								</div>
+								<div class="col-md-12 basicinfo">
+									<form action="">
+										<div class="col-md-6 form-group">
+											<div>
+												<p class="requiredinput">*bắt buộc</p>
+												<h4>Số điện thoại</h4>
+												<input type="text" class="form-control" required="Vui lòng nhập số điện thoại">
+											</div>
+											<div>
+												<p class="requiredinput">*bắt buộc</p>
+												<h4>Email </h4>
+												<input type="email" class="form-control" pattern="">
+											</div>
+										</div>
+										<div class="col-md-6 form-group">
+											<div>
+												<p class="requiredinput">*bắt buộc</p>
+												<h4>Họ tên</h4>
+												<input type="text" class="form-control">
+											</div>
+											<div>
+												<p class="requiredinput">*bắt buộc</p>
+												<h4>Địa chỉ </h4>
+												<input type="text" class="form-control" required="Địa chỉ không được để trống">
+											</div>
+										</div>
+										<div class="col-md-12 note">
+											<h4>Ghi chú</h4>
+											<textarea class="form-control" name="note" id="note" cols="50" rows="10"></textarea>
+										</div>
+									</form>
+								</div>
+								<input type="submit" id="submit-form" class="hidden" />
+						</div>		
+					</div>
+					<div class="col-md-4 orderreview">
+						<div class="ordertitle"><h4>ĐƠN HÀNG CỦA QUÝ KHÁCH</h4></div>
+						<div class="checkoutdetail">
+							<div class="itemreview">
+								<p class="listinfo">
+									<label>Tạm tính</label>
+									<span>300.000</span>
+								</p>
+							</div>
+							<div class="ordertotal">
+								<p class="listinfo">
+									<strong>Thành tiền</strong>
+									<span class="textcl">300.000</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-10">
+							<div class="col-md-5"><a href="shopping-cart.html"><button class="btn btn-default btn-check">QUAY LẠI <br> GIỎ HÀNG</button></a></div>
+						<div class="col-md-5"><button for="submit-form" tabindex="0" type="submit" value="submit" class="btn btn-default btn-check1">XÁC NHẬN THÔNG TIN</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<!--FOOTER-->
+			<div class="footer-base">
+				<div class="container">
+					<div class="footer"> 
+						<div class="text-left">
+							<img src="images/logo.png">
+							<h4>NHPDQ BOOKSTORE</h4>
+							<p><a href="index.html">Trang Chủ</a> | <a href="about.html">Giới Thiệu</a> | <a href="shop.html">Danh mục sách</a> | <a href="membership.html">Đăng ký thành viên</a> | <a href="news.html">Tin tức</a> | <a href="contact.html">Liên hệ</a></p>
+						</div>
+						<div class="text-right">
+							<div class="contact-colum">
+								<p><img src="images/map-icon.png" alt="">  102 CMT8 Quận 10</p>  
+								<p><img src="images/phone-icon.png" alt="">  12 345 6789</p>
+							</div>
+							<div class="contact-colum">  
+								<p><img src="images/mail-icon.png" alt=""> nhpdq@gmail.com</p>
+								<p><a href="">&nbsp;<img src="images/fb-icon.png" alt=""> nhpdq</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="js/shoppingcart.js"></script>
+			<script src="js/modernizr.js"></script> <!-- Modernizr -->
+			<script src="js/owl.carousel.min.js"></script>
+
+
+
+		</body>
+		</html>
