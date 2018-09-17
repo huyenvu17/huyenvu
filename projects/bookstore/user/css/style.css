@@ -310,16 +310,33 @@ body{
   height:118px;
   background-color:#44AC64;
   border-radius:5px;
-  margin:0 5px;
+  margin:2px 5px;
   padding:10px 0;
   text-decoration:none;
 }
+
 .cate-item p{
   padding-top:5px;
 }
 .cate-item:hover{
   background-color:#B4DBC0;
 }
+@media screen and (max-width: 800px)
+{
+  .cate-item {
+    width: 100px;
+    height: 80px;
+    background-color: #44AC64;
+    border-radius: 5px;
+    margin: 2px 5px;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  .cate-item img{
+    width: 32px;
+  }
+}
+
 /*6. BEST SELLER BOOK*/
 .book-carousel{
   margin-bottom:30px;
