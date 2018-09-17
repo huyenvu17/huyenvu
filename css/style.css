@@ -271,6 +271,9 @@ nav ul li a:hover{
     100% { opacity: 0;left:500px; top:0px;}
     
 }
+.work-show img{
+  width: 100%;
+}
 .work-show{
       display: none;
       -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -283,8 +286,8 @@ nav ul li a:hover{
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
   }
 }
 @keyframes slide-right {
@@ -293,11 +296,47 @@ nav ul li a:hover{
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
   }
 }
 
+
+.work-popup1{
+  visibility: hidden;
+}
+@media screen and (max-width: 1200px){
+  .work-popup img{
+    width:100%;
+  }
+  .intro-text h2{
+    font-size:35px;
+    letter-spacing: -1px;
+  }
+  .intro-text h4{
+    font-size: 25px;
+  }
+  .flying-wind{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px)
+{
+  .intro-text h2{
+    font-size:25px;
+    letter-spacing: -1px;
+  }
+  .intro-text h4{
+    font-size: 15px;
+  }
+  #plane img{
+    width: 80px;
+  }
+  .work-show img{
+    margin-left: -80px;
+  }
+}
 .flying-effect{
     width: 35px;
     height: 4px;
