@@ -343,7 +343,7 @@ nav ul li a:hover{
     border-radius: 10px;
     position: absolute;
     left: 121px;
-    top: 255px;
+    top: 195px;
     background: white;
     animation: windy 1s infinite;
 }
@@ -353,7 +353,7 @@ nav ul li a:hover{
     border-radius: 10px;
     position: absolute;
     left: 110px;
-    top: 290px;
+    top: 238px;
     background: white;
     animation: windy 1s infinite;
 }
@@ -363,7 +363,7 @@ nav ul li a:hover{
     border-radius: 10px;
     position: absolute;
     left: 140px;
-    top: 315px;
+    top: 250px;
     background: white;
     animation: windy 1s infinite;
 }
