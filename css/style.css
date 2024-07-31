@@ -231,11 +231,10 @@ nav ul li a:hover{
 .intro-text h2{
       vertical-align: middle;
       color: #000;
-      font-size:60px;
+      font-size:50px;
       font-weight: bold;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #000;
-      letter-spacing: -6px;
 }
 .intro-text h4{
   font-size:20px;
